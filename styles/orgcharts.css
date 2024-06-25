@@ -1,0 +1,25 @@
+/* CSS for Node Toggler */
+.p-node-toggler{
+    display: flex;
+    justify-content: center;
+    line-height: 1.5em;
+}
+/* CSS for Organization Chart Lines */
+tr[data-pc-section="lines"]
+.p-organizationchart-line-right.p-organizationchart-line-top{
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    visibility: inherit;
+}
+tr[data-pc-section="lines"]
+.p-organizationchart-line-left.p-organizationchart-line-top{
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+        visibility: inherit;
+}
+/* Hide lines when node is collapsed */
+/* tr.p-organizationchart-node-collapsed ~ tr[data-pc-section="lines"] .p-organizationchart-line-right.p-organizationchart-line-top,
+tr.p-organizationchart-node-collapsed ~ tr[data-pc-section="lines"] .p-organizationchart-line-left.p-organizationchart-line-top {
+    visibility: hidden;
+    border: 0;
+} */
